@@ -51,6 +51,11 @@ Route::post('cake', function () {
 
 Route::resource('players', 'PlayerController');
 
+Route::post('players/{id}/rate', [
+	'as' => 'players.rate',
+	'uses' => 'PlayerController@rate'
+]);
+
 
 
 

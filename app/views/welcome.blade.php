@@ -11,26 +11,25 @@
 		<div class="row">
 		    <div class="col-md-3">
 		    	@include('layouts.bars.left-bar')
-
 		    </div>
 
 		    <div class="col-md-6" style="min-height: 300px; background-color:green;">
 				<strong>
 			    	@foreach($defenders as $index => $defender)
 						<div class="defenders" style="position: absolute; top: 25%; left:{{ 10 + $index * 20 }}%">
-							{{ $defender->name }}
+							<a href="{{ $defender->url() }}">{{ $defender->name }}</a>
 						</div> 
 			    	@endforeach
 
 			    	@foreach($midfielders as $index => $midfielder)
 						<div class="midfielders" style="position: absolute; top: 35%; left:{{ 10 + $index * 20 }}%">
-							{{ $midfielder->name }}
+							<a href="{{ $midfielder->url() }}">{{ $midfielder->name }}</a>
 						</div> 
 			    	@endforeach
 
 			    	@foreach($strikers as $index => $striker)
 						<div class="strikers" style="position: absolute; top: 55%; left:{{ 10 + $index * 20 }}%">
-							{{ $striker->name }}
+							<a href="{{ $striker->url() }}">{{ $striker->name }}</a>
 						</div> 
 			    	@endforeach
 				</strong>

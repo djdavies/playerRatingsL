@@ -20,17 +20,17 @@ class HomeController extends BaseController {
 		$defenders = Player::wherePosition('defender')
 			->orderBy('points', 'desc')
 			->take(4)
-			->get(['name']);
+			->get();
 
 		$midfielders = Player::wherePosition('midfielder')
 			->orderBy('points', 'desc')
 			->take(4)
-			->get(['name']);
+			->get();
 
 		$strikers = Player::wherePosition('striker')
 			->orderBy('points', 'desc')
 			->take(2)
-			->get(['name']);	
+			->get();	
 
 		return View::make('welcome', compact('defenders', 'midfielders', 'strikers'));
 	}
@@ -41,6 +41,7 @@ class HomeController extends BaseController {
 		$u21table = teamsleagueu21::all()
 				->orderBy('points', 'desc')
 				->get(['name']);
+				->get(['points']);
 
 	}
 
