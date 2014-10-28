@@ -1,7 +1,41 @@
 @extends('layouts.players.master-player')
 
+@include('layouts.modals.modal-' . $player->position . 's')
+
 @section('content')
 <div class="col-md-6">
-	<h1>Player Details for {{{ $player->name }}}</h1>
-</div>
+		{{--
+			Check if columns hit 3, if they do, insert a new row 
+		--}}	
+	<?php 
+		$i = 1; 
+	?>
+	@if ( $i % 3 == 0)	
+		<div class="row">
+	@endif	
+		<div class="col-md-4">
+			<div class="thumbnail" >
+				<img data-src="holder.js/200x200">
+				<div class="caption"> 
+					<h4>{{{ $player->name }}}</h4>
+					<p>Age: {{{ $player->age }}}</p>
+					<p>Nation: {{{ $player->nationality }}}</p>
+					<p>Position: {{{ $player->position }}}</p>
+					<p>Points: {{{ $player->points }}}</p>
+					<p>Team: {{{ $player->team }}}</p>
+					<p>Height(cm): {{{ $player->height }}}</p>
+					<p>Weight(kg): {{{ $player->weight }}}</p>
+
+					<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+						Rate Me
+					</button>
+
+				</div>
+			</div>
+		</div>
+	{{-- Check if we hit a multiple of 3(columns) again, if we did, close the row div --}}	
+	@if ( $i % 3 == 0 )	
+		</div>
+	@endif	
+</div>		
 @stop

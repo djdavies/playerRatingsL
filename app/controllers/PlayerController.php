@@ -44,12 +44,20 @@ class PlayerController extends \BaseController {
 	public function show($id)
 	{
 		$player = Player::find($id);
-		return View::make('layouts.players.player', compact('player'));
+		if ($player)
+			return View::make('layouts.players.player', compact('player'));
+		else
+			return Redirect::route('home');
+	}
+
+	public function showRateMe($id)
+	{
+		return View::make('layouts.modals.master-modal', compact('player'));
 	}
 
 
 	/**
-	 * Show the form for editing the specified resource.
+	 * Show the form for editing the specified resource. 
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -57,8 +65,13 @@ class PlayerController extends \BaseController {
 	public function edit($id)
 	{
 		//
-	}
-
+		$player = Player::find($id);
+		if ($player)
+			return View::make('modal-layout', compact('player'));
+		else 
+			// create a "not found page or use a 404?..."
+			return Redirect::route('home');
+	} 
 
 	/**
 	 * Update the specified resource in storage.
@@ -86,7 +99,11 @@ class PlayerController extends \BaseController {
 	public function rate($id) {
 		// find the model
 		$player = Player::find($id);
+		$values = Input::all();
+		$rating = $player->ratings()->create($values);
 
+		if (Auth::check())
+			$rating->user()->associate(Auth::user()->id);
 		// consider whether the authenticated user *can* rate this model
 
 		// sanity check the ratings received - validation class

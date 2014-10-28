@@ -22,21 +22,23 @@
 			    	@endforeach
 
 			    	@foreach($midfielders as $index => $midfielder)
-						<div class="midfielders" style="position: absolute; top: 35%; left:{{ 10 + $index * 20 }}%">
+						<div class="midfielders" style="position: absolute; top: 45%; left:{{ 10 + $index * 20 }}%">
 							<a href="{{ $midfielder->url() }}">{{ $midfielder->name }}</a>
 						</div> 
 			    	@endforeach
 
 			    	@foreach($strikers as $index => $striker)
-						<div class="strikers" style="position: absolute; top: 55%; left:{{ 10 + $index * 20 }}%">
+						<div class="strikers" style="position: absolute; top: 65%; left:{{ 30 + $index * 20 }}%">
 							<a href="{{ $striker->url() }}">{{ $striker->name }}</a>
 						</div> 
 			    	@endforeach
 				</strong>
 		    </div>
+
 		    <div class="col-md-3">
 				@include('layouts.bars.right-bar')		    	
 		    </div>
+		    
 		</div>
 	</div>
 </body>

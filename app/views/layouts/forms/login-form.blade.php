@@ -20,9 +20,10 @@ else{
 	action="doLogin.php"
 	>
 	<!-- add into style to see div: background-color: red -->
+		
 	<span style="width: 100px; height: 100px; margin: 25px;">
-	Username: <input type="text" name="username" />
-	Password: <input type="text" name="password" />
+	Username: <input type="text" name ="username" class="form-control" placeholder="">
+	Password: <input type="text" name ="password" class="form-control" placeholder="">
 	<input type="submit" value="Sign in" />
 	</form>
 	<form class="navbar-form navbar-right"

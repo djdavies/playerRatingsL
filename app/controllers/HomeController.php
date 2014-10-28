@@ -37,12 +37,9 @@ class HomeController extends BaseController {
 
 	public function showLeagueTable()
 	{
-
 		$u21table = teamsleagueu21::all()
 				->orderBy('points', 'desc')
 				->get(['name']);
-				->get(['points']);
-
 	}
 
 }

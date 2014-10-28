@@ -18,13 +18,33 @@ Route::get('/',
 	]
 );
 
+
+Route::resource('players', 'PlayerController');
+
+// should be the action for a form that will submit the rating
+// - it will be the job of the target action to store the rating
+/*
+*/
+Route::post('players/{id}/rate', [
+	'as' => 'players.rate',
+	'uses' => 'PlayerController@rate'
+]); 
+
+Route::get('players/{id}/rateme', [
+	'as' => 'players.rateme',
+	'uses' => 'PlayerController@showRateMe'
+]);
+
+/*
 Route::Get('u21defenders',  [
 	'as' => 'u21defenders',
 	'uses' => 'U21DefenderController@showU21Defenders'
 	]
 );
+*/
 
 // little validation test
+/*
 Route::post('cake', function () {
 	$values = Input::only('time', 'temp', 'ingredients', 'user_id');
 
@@ -41,6 +61,7 @@ Route::post('cake', function () {
 		: 'Passed';
 	*/
 	
+/*	
 	if ($validator->fails()) {
 		return Response::json($validator->messages(), 400);
 	} else {
@@ -48,27 +69,30 @@ Route::post('cake', function () {
 		Cake::create($values);
 	}
 });
+*/
 
-Route::resource('players', 'PlayerController');
 
-Route::post('players/{id}/rate', [
-	'as' => 'players.rate',
-	'uses' => 'PlayerController@rate'
+// Routes to tinker with AJAX - this is not part of the website
+// and may be deleted safely
+
+/*
+Route::get('api/v1/players', [
+    'as' => 'api.players',
+    function () {
+    	if (rand(0,1))
+        return Player::all();
+    else
+    	return Response::json(['messages' => ['nope']], 400);
+    }
 ]);
 
+Route::get('ajax', function () {
+	return View::make('hello');
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+Route::post('api/v1/make', [
+	'as' => 'api.make', function () {
+		return Response::make('',200); 
+	}
+]);
+*/
