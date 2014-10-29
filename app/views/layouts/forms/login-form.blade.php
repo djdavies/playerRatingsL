@@ -1,4 +1,4 @@
-<html lang="eng">
+
 <ul class="nav navbar-nav navbar-right">
 
 	@if (isset($_SESSION['user_id']))
@@ -23,8 +23,6 @@ action="login">
 	<button type="register" class="btn btn-default">Register</button>
 </div>
 </form>
-</body>
 
+@endif
 
-</html>
-@endif	
