@@ -13,7 +13,6 @@ class DefenderRating extends Eloquent {
 	}
 
 	public function ratingAverage(){
-
 		return (
 			$this->tackling + 
 			$this->passing + 

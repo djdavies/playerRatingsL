@@ -10,10 +10,10 @@
       </div>
       <div class="modal-body">
         <h4>{{{ $player->name }}}</h4>
-
         @yield('rating-form')
      </div>
-      <div class="modal-footer">
+
+     <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save rating</button>
       </div>
