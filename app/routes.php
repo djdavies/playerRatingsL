@@ -35,6 +35,16 @@ Route::get('players/{id}/rateme', [
 	'uses' => 'PlayerController@showRateMe'
 ]);
 
+Route::post('login', [
+	'as' => 'login',
+	'uses' => 'LoginController@login'
+	]);
+
+Route::post('logout', [
+	'as' => 'logout',
+	'uses' => 'LoginController@logout'
+	]);	
+
 /*
 Route::Get('u21defenders',  [
 	'as' => 'u21defenders',

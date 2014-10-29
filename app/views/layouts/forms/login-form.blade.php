@@ -1,43 +1,24 @@
-<?php
-
-$loggedIn = isset($_SESSION['username']);
-if($loggedIn){
-	
-	
-	$user = $_SESSION['username'];
-	echo $user['username'];
-	
-}
-else{
-	?>
-
 <ul class="nav navbar-nav navbar-right">
 
-	<form
-	class="navbar-form navbar-right"
-	
-	method="POST"
-	action="doLogin.php"
-	>
-	<!-- add into style to see div: background-color: red -->
+			@if (isset($_SESSION['user_id']))
+			<form
+			class="navbar-form navbar-right" role="logout"
+			method="POST"
+			action="logout">
+			<div class="form-group">
+				<button type="logout" class="btn btn-default">Logout</button>
+			</div>
+		</form> 		
 		
-	<span style="width: 100px; height: 100px; margin: 25px;">
-	Username: <input type="text" name ="username" class="form-control" placeholder="">
-	Password: <input type="text" name ="password" class="form-control" placeholder="">
-	<input type="submit" value="Sign in" />
-	</form>
-	<form class="navbar-form navbar-right"
-
-	method="POST"
-	action="RegistrationForm.php"
-	>
-	
-	<input type="submit" class="btn btn-default" value="Register" />
-	</form>
-	</span>
-
-</ul>
-<?php
-}
-
-?>
+		@else 
+		<form
+		class="navbar-form navbar-right" role="login"
+		method="POST"
+		action="login">
+		<div class="form-group">
+			Username: <input style="width:100px " type="text" name="username" class="form-control">
+			Password: <input style="width:130px "type="text" name="password" class="form-control">
+			<button type="login" class="btn btn-default">Login</button>
+		</div>
+	</form> 
+	@endif	
