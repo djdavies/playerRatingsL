@@ -17,6 +17,7 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
+		session_start();
 		$defenders = Player::wherePosition('defender')
 			->orderBy('points', 'desc')
 			->take(4)
