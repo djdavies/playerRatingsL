@@ -1,9 +1,7 @@
-@extends('layouts.players.master-player')
-
-@include('layouts.modals.modal-' . $player->position . 's')
-
+@extends('welcome')
 @section('content')
-<div class="col-md-6">
+<div >
+	@include('layouts.modals.modal-' . $player->position . 's')
 		{{--
 			Check if columns hit 3, if they do, insert a new row 
 		--}}	
@@ -13,7 +11,7 @@
 	@if ( $i % 3 == 0)	
 		<div class="row">
 	@endif	
-		<div class="col-md-4">
+		<div class="col-md-6">
 			<div class="thumbnail" >
 				<img data-src="holder.js/200x200">
 				<div class="caption"> 

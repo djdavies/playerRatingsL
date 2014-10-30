@@ -33,7 +33,7 @@ class HomeController extends BaseController {
 			->take(2)
 			->get();	
 
-		return View::make('welcome', compact('defenders', 'midfielders', 'strikers'));
+		return View::make('TeamOfTheWeek', compact('defenders', 'midfielders', 'strikers'));
 	}
 
 	public function showLeagueTable()
