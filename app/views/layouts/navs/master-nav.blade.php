@@ -42,16 +42,9 @@
             </ul>
           </li>
         
-        <form class="navbar-form navbar-left" role="search"
-          method="GET"
-          action="searchPlayer"
-        >
-          <div class="form-group">
-            <input type="text" name ="search" class="form-control" placeholder="Search">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-          <!-- include login -->
+          <!-- search form -->
+          @include('layouts.searchPlayers.searchPlayer')
+          <!-- login form -->
           @include('layouts.forms.login-form')
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

@@ -4,17 +4,14 @@ class SearchPlayerController extends \BaseController {
 	// search for a player...
 	public function searchForPlayer() {
 
-		   $q = Input::get('searchForPlayer');
+	   $q = Input::get('searchForPlayer');
 
-    		$searchTerms = explode(' ', $q);
+		$searchTerms = explode(' ', $q);
 
-    		$query = DB::table('players');
+		$query = DB::table('players');
 
-		foreach($searchTerms as $term)
-    	{
-			//$searchPlayer = Player::where('name', 'LIKE', '%'.$term.'%');
+		foreach($searchTerms as $term) {
 			$query->where('name', 'LIKE', '%'. $term .'%');
-			//$users = User::where('username', '=', Input::get('username'))->take(1)->get();
 		}
 		
 		$results = $query->get();
