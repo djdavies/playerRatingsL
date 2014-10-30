@@ -11,7 +11,7 @@
 	@if ( $i % 3 == 0)	
 		<div class="row">
 	@endif	
-		<div class="col-md-6">
+		<div class="col-md-4">
 			<div class="thumbnail" >
 				<img data-src="holder.js/200x200">
 				<div class="caption"> 
