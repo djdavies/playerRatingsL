@@ -45,7 +45,7 @@ class PlayerController extends \BaseController {
 	{
 		$player = Player::find($id);
 		if ($player)
-			return View::make('layouts.players.player', compact('player'));
+			return View::make('layouts.players.player', ['player'=>$player]);
 		else
 			return Redirect::route('home');
 	}
