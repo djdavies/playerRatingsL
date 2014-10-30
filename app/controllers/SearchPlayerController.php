@@ -12,10 +12,11 @@ class SearchPlayerController extends \BaseController {
 
 		foreach($searchTerms as $term) {
 			$query->where('name', 'LIKE', '%'. $term .'%');
+			$results = $query->get();
 		}
 		
-		$results = $query->get();
-		return $results;
+		//return $results;
+		return View::make('layouts.searchPlayers.searchPlayerResult', ['results'=>$results]);
 	} // end func
 } // end class
 
