@@ -40,6 +40,7 @@ class Player extends Eloquent {
 			: 0;
 	}
 }
+
 /*
 	protected $appends = ['greeting'];
 	protected $hidden = ['position'];

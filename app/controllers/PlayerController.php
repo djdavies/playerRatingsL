@@ -111,8 +111,5 @@ class PlayerController extends \BaseController {
 		// interact with the player model to save the new rating
 
 		// interact with the website user - return some view
-
-
 	}
-
 }

@@ -43,8 +43,8 @@
           </li>
         
         <form class="navbar-form navbar-left" role="search"
-          method="POST"
-          action="searchPlayer.php"
+          method="GET"
+          action="searchPlayer"
         >
           <div class="form-group">
             <input type="text" name ="search" class="form-control" placeholder="Search">
