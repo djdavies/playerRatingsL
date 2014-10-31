@@ -50,10 +50,6 @@ Route::get('searchPlayer/{q}', [
 	'uses' => 'SearchPlayerController@searchForPlayer'
 ]);
 
-Route::get('players/{id}/{position}/u21Defenders', [
-	'as' => 'u21Defenders',
-	'uses' => 'U21DefendersController@showU21Defenders'
-	]);
 
 // little validation test
 /*

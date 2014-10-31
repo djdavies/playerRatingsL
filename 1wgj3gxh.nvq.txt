@@ -1,0 +1,107 @@
+﻿Merge branch 'master' of https://github.com/djdavies/playerRatingsL
+
+Conflicts:
+	app/config/app.php
+	composer.json
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 1 and 1 different commit each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	modified:   app/config/app.php
+#	new file:   app/config/packages/itsgoingd/clockwork/config.php
+#	modified:   app/controllers/BaseController.php
+#	modified:   app/controllers/SearchPlayerController.php
+#	modified:   app/routes.php
+#	modified:   app/views/layouts/searchPlayers/searchPlayerResult.blade.php
+#	modified:   composer.json
+#	modified:   vendor/autoload.php
+#	modified:   vendor/composer/autoload_classmap.php
+#	modified:   vendor/composer/autoload_namespaces.php
+#	modified:   vendor/composer/autoload_real.php
+#	modified:   vendor/composer/installed.json
+#	modified:   vendor/filp/whoops/src/Whoops/Exception/ErrorException.php
+#	modified:   vendor/filp/whoops/src/Whoops/Exception/Formatter.php
+#	modified:   vendor/filp/whoops/src/Whoops/Exception/Frame.php
+#	modified:   vendor/filp/whoops/src/Whoops/Exception/FrameCollection.php
+#	modified:   vendor/filp/whoops/src/Whoops/Exception/Inspector.php
+#	modified:   vendor/filp/whoops/src/Whoops/Handler/CallbackHandler.php
+#	modified:   vendor/filp/whoops/src/Whoops/Handler/Handler.php
+#	modified:   vendor/filp/whoops/src/Whoops/Handler/HandlerInterface.php
+#	modified:   vendor/filp/whoops/src/Whoops/Handler/JsonResponseHandler.php
+#	modified:   vendor/filp/whoops/src/Whoops/Handler/PlainTextHandler.php
+#	modified:   vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php
+#	modified:   vendor/filp/whoops/src/Whoops/Handler/SoapResponseHandler.php
+#	modified:   vendor/filp/whoops/src/Whoops/Handler/XmlResponseHandler.php
+#	modified:   vendor/filp/whoops/src/Whoops/Provider/Phalcon/WhoopsServiceProvider.php
+#	modified:   vendor/filp/whoops/src/Whoops/Provider/Silex/WhoopsServiceProvider.php
+#	modified:   vendor/filp/whoops/src/Whoops/Resources/views/env_details.html.php
+#	modified:   vendor/filp/whoops/src/Whoops/Resources/views/frame_code.html.php
+#	modified:   vendor/filp/whoops/src/Whoops/Resources/views/frame_list.html.php
+#	modified:   vendor/filp/whoops/src/Whoops/Resources/views/header.html.php
+#	modified:   vendor/filp/whoops/src/Whoops/Run.php
+#	modified:   vendor/filp/whoops/src/Whoops/Util/Misc.php
+#	modified:   vendor/filp/whoops/src/Whoops/Util/TemplateHelper.php
+#	modified:   vendor/filp/whoops/src/deprecated/Zend/ExceptionStrategy.php
+#	modified:   vendor/filp/whoops/src/deprecated/Zend/Module.php
+#	modified:   vendor/filp/whoops/src/deprecated/Zend/RouteNotFoundStrategy.php
+#	modified:   vendor/filp/whoops/src/deprecated/Zend/module.config.example.php
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Application.php
+#	modified:   vendor/symfony/console/Symfony/Component/Console/README.md
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/ApplicationTest.php
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_1.json
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_1.md
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_1.txt
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_1.xml
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_2.json
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_2.md
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_2.txt
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_2.xml
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_astext1.txt
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_astext2.txt
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_asxml1.txt
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_asxml2.txt
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_gethelp.txt
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_run1.txt
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_run2.txt
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/command_astext.txt
+#	modified:   vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/command_asxml.txt
+#	modified:   vendor/symfony/css-selector/Symfony/Component/CssSelector/README.md
+#	modified:   vendor/symfony/css-selector/Symfony/Component/CssSelector/XPath/Translator.php
+#	modified:   vendor/symfony/debug/Symfony/Component/Debug/ExceptionHandler.php
+#	modified:   vendor/symfony/debug/Symfony/Component/Debug/README.md
+#	modified:   vendor/symfony/dom-crawler/Symfony/Component/DomCrawler/README.md
+#	modified:   vendor/symfony/event-dispatcher/Symfony/Component/EventDispatcher/EventDispatcherInterface.php
+#	modified:   vendor/symfony/event-dispatcher/Symfony/Component/EventDispatcher/README.md
+#	modified:   vendor/symfony/event-dispatcher/Symfony/Component/EventDispatcher/Tests/DependencyInjection/RegisterListenersPassTest.php
+#	modified:   vendor/symfony/finder/Symfony/Component/Finder/README.md
+#	modified:   vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/README.md
+#	modified:   vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/RedirectResponse.php
+#	modified:   vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Tests/Session/Storage/Handler/MemcachedSessionHandlerTest.php
+#	modified:   vendor/symfony/http-kernel/Symfony/Component/HttpKernel/Kernel.php
+#	modified:   vendor/symfony/http-kernel/Symfony/Component/HttpKernel/README.md
+#	modified:   vendor/symfony/http-kernel/Symfony/Component/HttpKernel/Tests/DependencyInjection/MergeExtensionConfigurationPassTest.php
+#	modified:   vendor/symfony/process/Symfony/Component/Process/README.md
+#	modified:   vendor/symfony/routing/Symfony/Component/Routing/CHANGELOG.md
+#	modified:   vendor/symfony/routing/Symfony/Component/Routing/README.md
+#	modified:   vendor/symfony/routing/Symfony/Component/Routing/RequestContext.php
+#	modified:   vendor/symfony/routing/Symfony/Component/Routing/RouteCompiler.php
+#	modified:   vendor/symfony/routing/Symfony/Component/Routing/Tests/RequestContextTest.php
+#	modified:   vendor/symfony/translation/Symfony/Component/Translation/README.md
+#
+# Changes not staged for commit:
+#	deleted:    public/PlayerImages/1.jpg
+#
+
