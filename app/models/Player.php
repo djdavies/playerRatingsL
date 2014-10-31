@@ -10,8 +10,6 @@ class Player extends Eloquent {
 		return URL::route('players.rate', $this->id);
 	}
 
-	
-
 	public function ratings() {
 		if ($this->position == 'defender') {
 			return $this->hasMany('DefenderRating');
