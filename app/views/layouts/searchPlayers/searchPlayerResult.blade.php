@@ -1,1 +1,3 @@
-Result for player
+@foreach ($players as $player)
+	<li>{{{ $player->name }}}</li>
+@endforeach
