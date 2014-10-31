@@ -121,8 +121,13 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+<<<<<<< HEAD
 		'Clockwork\Support\Laravel\ClockworkServiceProvider',
 	
+=======
+		'Clockwork\Support\Laravel\ClockworkServiceProvider'
+
+>>>>>>> 373eff5f2d9affd137c13876ab5f179eb8449088
 	),
 
 
@@ -190,8 +195,13 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+<<<<<<< HEAD
 		'Clockwork' => 'Clockwork\Support\Laravel\Facade',
 
+=======
+	    'Clockwork' => 'Clockwork\Support\Laravel\Facade',
+>>>>>>> 373eff5f2d9affd137c13876ab5f179eb8449088
 	),
-
 );
+
+

@@ -1,22 +1,26 @@
 <?php
 
+use Illuminate\Database\Eloquent\Collection;
+
 class SearchPlayerController extends \BaseController {
 	// search for a player...
-	public function searchForPlayer() {
+	public function searchForPlayer($q) {
 
-	   $q = Input::get('searchForPlayer');
+		// $q = Input::get('searchForPlayer');
 
 		$searchTerms = explode(' ', $q);
 
-		$query = DB::table('players');
+		$query = Player::orderBy('name');
 
 		foreach($searchTerms as $term) {
-			$query->where('name', 'LIKE', '%'. $term .'%');
-			$results = $query->get();
+			$query->orWhere('name', 'LIKE', '%'. $term .'%');
 		}
 		
+		$players = $query->get();
+		
 		//return $results;
-		return View::make('layouts.searchPlayers.searchPlayerResult', ['results'=>$results]);
+		return View::make('layouts.searchPlayers.searchPlayerResult')
+			->with('players', $players);
 	} // end func
 } // end class
 

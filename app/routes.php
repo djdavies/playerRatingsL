@@ -45,7 +45,7 @@ Route::post('logout', [
 	'uses' => 'LoginController@logout'
 ]);	
 
-Route::get('searchPlayer', [
+Route::get('searchPlayer/{q}', [
 	'as' => 'searchPlayer',
 	'uses' => 'SearchPlayerController@searchForPlayer'
 ]);
