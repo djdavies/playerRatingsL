@@ -27,6 +27,17 @@ $('input[name=password]').on('input', function(){
 });
 	//alert('Wrong Information');
 
+// intercept the search form, and customize the URL to give a nice pretty one...
+$('[action=searchPlayer]').submit(function (e) {
+	e.preventDefault();
+
+	var $this = $(this);
+	var searchTerm = $this.find('[name=searchForPlayer]')
+		.val()
+		.replace(' ', '+');
+	window.location = '/searchPlayer/' + searchTerm;
+});
+
 
 // inspect the content of form input to ensure it passes requirements (alpha / num / length)
 

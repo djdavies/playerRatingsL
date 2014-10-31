@@ -7,8 +7,8 @@ class SearchPlayerController extends \BaseController {
 	public function searchForPlayer($q) {
 
 		// $q = Input::get('searchForPlayer');
-
-		$searchTerms = explode(' ', $q);
+		$q = str_replace(' ', '+', $q);
+		$searchTerms = explode('+', $q);
 
 		$query = Player::orderBy('name');
 
