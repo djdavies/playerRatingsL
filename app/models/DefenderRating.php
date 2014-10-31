@@ -21,7 +21,7 @@ class DefenderRating extends Eloquent {
 			$this->composure
 			) / 5;
 	}
-
+}	
 /*SELECT
 tackling, 
 passing, 
@@ -33,5 +33,3 @@ FROM `ratingsdefender`
 SUM (points) as Total Points
 WHERE player_id = '1'*/
 
-
-}

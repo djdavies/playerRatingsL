@@ -13,7 +13,7 @@
 	@endif	
 		<div class="col-md-4">
 			<div class="thumbnail" >
-				<img src="/PlayerImages/{{{ $player->id }}}.jpg" data-src="holder.js/200x200">
+				<img src="/PlayerImages/{{{ $player->id }}}.png" data-src="holder.js/200x200">
 				<div class="caption"> 
 					<h4>{{{ $player->name }}}</h4>
 					<h3>{{{ $player->average() }}}</h3>

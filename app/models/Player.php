@@ -36,7 +36,7 @@ class Player extends Eloquent {
 			$total += $rating->ratingAverage();
 		}
 		return $this->ratings->count()
-			? $total / $this->ratings->count()
+			? round ($total / $this->ratings->count(), 2)
 			: 0;
 	}
 }
