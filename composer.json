@@ -5,7 +5,12 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.2.*",
+<<<<<<< HEAD
+		"itsgoingd/clockwork": "1.6"
+
+=======
 		"itsgoingd/clockwork": "1.*"
+>>>>>>> 373eff5f2d9affd137c13876ab5f179eb8449088
 	},
 	"autoload": {
 		"classmap": [

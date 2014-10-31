@@ -9,4 +9,6 @@ Thumbs.db
 
 .elasticbeanstalk/
 
-
+/vendor*
+
+/config/*
