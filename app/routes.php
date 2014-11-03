@@ -35,6 +35,16 @@ Route::get('players/{id}/rateme', [
 	'uses' => 'PlayerController@showRateMe'
 ]);
 
+Route::get('u21/{position}',[
+	'as' => 'players.u21',
+	'uses' => 'PlayerController@showU21'
+	]);
+
+Route::get('u21/{position}',[
+	'as' => 'players.u21',
+	'uses' => 'PlayerController@getU21s'
+	]);
+
 Route::post('login', [
 	'as' => 'login',
 	'uses' => 'LoginController@login'
@@ -50,15 +60,12 @@ Route::get('searchPlayer/{q}', [
 	'uses' => 'SearchPlayerController@searchForPlayer'
 ]);
 
-<<<<<<< HEAD
-=======
 /*
 Route::get('players/{id}/{position}/u21Defenders', [
 	'as' => 'u21Defenders',
 	'uses' => 'U21DefendersController@showU21Defenders'
 	]);
 */
->>>>>>> 70345e6dedc51ec0ba02a5d351afde71816e8a0e
 
 // little validation test
 /*

@@ -1,17 +1,10 @@
-@extends('welcome')
-@section('content')
-<div >
+
+<div class="col-md-4">
 	@include('layouts.modals.modal-' . $player->position . 's')
 		{{--
 			Check if columns hit 3, if they do, insert a new row 
 		--}}	
-	<?php 
-		$i = 1; 
-	?>
-	@if ( $i % 3 == 0)	
-		<div class="row">
-	@endif	
-		<div class="col-md-4">
+	
 			<div class="thumbnail" >
 				<img src="/PlayerImages/{{{ $player->id }}}.png" data-src="holder.js/200x200">
 				<div class="caption"> 
@@ -30,10 +23,5 @@
 
 				</div>
 			</div>
-		</div>
-	{{-- Check if we hit a multiple of 3(columns) again, if we did, close the row div --}}	
-	@if ( $i % 3 == 0 )	
-		</div>
-	@endif	
-</div>		
-@stop
+	</div>
+				 

@@ -18,7 +18,7 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">U21 <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="u21Defenders.php">Defenders</a></li>
+              <li><a href="/u21/defender">Defenders</a></li>
               <li><a href="#">Midfields</a></li>
               <li><a href="#">Strikers</a></li>
             </ul>

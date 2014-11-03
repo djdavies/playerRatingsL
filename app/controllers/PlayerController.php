@@ -84,6 +84,24 @@ class PlayerController extends \BaseController {
 		//
 	}
 
+	public function showU21($id)
+	{
+		
+		$u21Player = Player::find($id);
+		
+		if ($u21Player->position == 'defender'){
+			return View::make('layouts.players.player', ['player'=>$u21Player]);
+		}
+
+		else
+			return Redirect::route('home');
+	}
+	public function getU21s($position){
+		
+		$playersu21 = Player::getU21s($position);
+
+		return View::make('layouts.players.players', ['players' => $playersu21]);
+	}
 
 	/**
 	 * Remove the specified resource from storage.

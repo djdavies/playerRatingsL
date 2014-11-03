@@ -10,6 +10,22 @@ class Player extends Eloquent {
 		return URL::route('players.rate', $this->id);
 	}
 
+	public function u21Url(){
+		return URL::route('players.u21', $this->id);
+	}
+
+	public static function getu21s($position){
+		if ($position == 'defender'){
+			return Player::where('position', '=', 'defender')->get();
+		}
+		// todo midfielder, strikers, goalkeeper
+	
+		else {
+			return 'Error: position not found';
+		}
+	}	
+				
+
 	public function ratings() {
 		if ($this->position == 'defender') {
 			return $this->hasMany('DefenderRating');
