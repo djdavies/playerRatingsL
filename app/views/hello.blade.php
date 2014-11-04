@@ -18,6 +18,7 @@
 
 
 <script>
+/*
 $(function() {
 
 	// bind to the form event...
@@ -46,7 +47,7 @@ $(function() {
 	    });
     });
 });
-       
+     */  
 </script>
 </html>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

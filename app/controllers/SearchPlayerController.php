@@ -18,9 +18,10 @@ class SearchPlayerController extends \BaseController {
 		
 		$players = $query->get();
 		
-		//return $results;
-		return View::make('layouts.searchPlayers.searchPlayerResult')
-			->with('players', $players);
+		return $players; // returns json players object
+		//return View::make('layouts.searchPlayers.searchPlayerResult')
+		//return View::make('welcome')
+		//->with('players', $players);
 	} // end func
 } // end class
 

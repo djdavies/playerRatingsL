@@ -1,7 +1,7 @@
 @extends('welcome')
 
 @section('content')
-	<div style="min-height: 300px; background-color:green;">
+	<div id="pitch" style="min-height: 300px; background-color:green;">
 	@foreach($defenders as $index => $defender)
 			<div class="defenders" 
 				style="position: absolute; top: 25%; left:{{ 10 + $index * 20 }}%">

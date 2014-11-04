@@ -14,9 +14,8 @@
 Route::get('/', 
 	[
 		'as' => 'home',
-		'uses' => 'HomeController@showWelcome'
-	]
-);
+		'uses' => 'HomeController@showWelcome',		
+]);
 
 
 Route::resource('players', 'PlayerController');
@@ -45,10 +44,17 @@ Route::post('logout', [
 	'uses' => 'LoginController@logout'
 ]);	
 
+
 Route::get('searchPlayer/{q}', [
 	'as' => 'searchPlayer',
-	'uses' => 'SearchPlayerController@searchForPlayer'
+	'uses' => 'SearchPlayerController@searchForPlayer'	
 ]);
+
+Route::post('searchPlayer', function() {
+
+	return null;
+});
+
 
 /*
 Route::get('players/{id}/{position}/u21Defenders', [
@@ -90,7 +96,7 @@ Route::post('cake', function () {
 // and may be deleted safely
 
 /*
-Route::get('api/v1/players', [
+Route::get('api/players', [
     'as' => 'api.players',
     function () {
     	if (rand(0,1))
