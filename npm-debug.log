@@ -1,0 +1,92 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'grunt-contrib-uglify-js',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json my-project-name@0.1.0 No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'grunt-contrib-uglify-js', null ]
+8 verbose cache add name=undefined spec="grunt-contrib-uglify-js" args=["grunt-contrib-uglify-js",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'grunt-contrib-uglify-js',
+9 verbose parsed url   path: 'grunt-contrib-uglify-js',
+9 verbose parsed url   href: 'grunt-contrib-uglify-js' }
+10 silly lockFile 8c23cf09-grunt-contrib-uglify-js grunt-contrib-uglify-js
+11 verbose lock grunt-contrib-uglify-js C:\Users\Adam Jama\AppData\Roaming\npm-cache\8c23cf09-grunt-contrib-uglify-js.lock
+12 silly lockFile 8c23cf09-grunt-contrib-uglify-js grunt-contrib-uglify-js
+13 silly lockFile 8c23cf09-grunt-contrib-uglify-js grunt-contrib-uglify-js
+14 verbose addNamed [ 'grunt-contrib-uglify-js', '' ]
+15 verbose addNamed [ null, '*' ]
+16 silly lockFile 488ff3e2-grunt-contrib-uglify-js grunt-contrib-uglify-js@
+17 verbose lock grunt-contrib-uglify-js@ C:\Users\Adam Jama\AppData\Roaming\npm-cache\488ff3e2-grunt-contrib-uglify-js.lock
+18 silly addNameRange { name: 'grunt-contrib-uglify-js', range: '*', hasData: false }
+19 verbose request where is /grunt-contrib-uglify-js
+20 verbose request registry https://registry.npmjs.org/
+21 verbose request id dc0856f72c16fc2f
+22 verbose url raw /grunt-contrib-uglify-js
+23 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-uglify-js' ]
+24 verbose url resolved https://registry.npmjs.org/grunt-contrib-uglify-js
+25 verbose request where is https://registry.npmjs.org/grunt-contrib-uglify-js
+26 info trying registry request attempt 1 at 16:12:11
+27 http GET https://registry.npmjs.org/grunt-contrib-uglify-js
+28 http 404 https://registry.npmjs.org/grunt-contrib-uglify-js
+29 verbose headers { date: 'Fri, 31 Oct 2014 16:12:09 GMT',
+29 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+29 verbose headers   'content-type': 'application/json',
+29 verbose headers   'cache-control': 'max-age=0',
+29 verbose headers   'content-length': '52',
+29 verbose headers   'accept-ranges': 'bytes',
+29 verbose headers   via: '1.1 varnish',
+29 verbose headers   age: '0',
+29 verbose headers   'x-served-by': 'cache-lcy1129-LCY',
+29 verbose headers   'x-cache': 'MISS',
+29 verbose headers   'x-cache-hits': '0',
+29 verbose headers   'x-timer': 'S1414771929.304935,VS0,VE356',
+29 verbose headers   'keep-alive': 'timeout=10, max=50',
+29 verbose headers   connection: 'Keep-Alive' }
+30 silly registry.get cb [ 404,
+30 silly registry.get   { date: 'Fri, 31 Oct 2014 16:12:09 GMT',
+30 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+30 silly registry.get     'content-type': 'application/json',
+30 silly registry.get     'cache-control': 'max-age=0',
+30 silly registry.get     'content-length': '52',
+30 silly registry.get     'accept-ranges': 'bytes',
+30 silly registry.get     via: '1.1 varnish',
+30 silly registry.get     age: '0',
+30 silly registry.get     'x-served-by': 'cache-lcy1129-LCY',
+30 silly registry.get     'x-cache': 'MISS',
+30 silly registry.get     'x-cache-hits': '0',
+30 silly registry.get     'x-timer': 'S1414771929.304935,VS0,VE356',
+30 silly registry.get     'keep-alive': 'timeout=10, max=50',
+30 silly registry.get     connection: 'Keep-Alive' } ]
+31 silly lockFile 488ff3e2-grunt-contrib-uglify-js grunt-contrib-uglify-js@
+32 silly lockFile 488ff3e2-grunt-contrib-uglify-js grunt-contrib-uglify-js@
+33 error 404 404 Not Found: grunt-contrib-uglify-js
+33 error 404
+33 error 404 'grunt-contrib-uglify-js' is not in the npm registry.
+33 error 404 You should bug the author to publish it
+33 error 404 It was specified as a dependency of 'my-project-name'
+33 error 404
+33 error 404 Maybe try 'npm search grunt contrib uglify'
+33 error 404
+33 error 404 Note that you can also install from a
+33 error 404 tarball, folder, or http url, or git url.
+34 error System Windows_NT 6.1.7601
+35 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "grunt-contrib-uglify-js" "--save-dev"
+36 error cwd C:\wamp\www\playerRatingsL
+37 error node -v v0.10.33
+38 error npm -v 1.4.28
+39 error code E404
+40 verbose exit [ 1, true ]

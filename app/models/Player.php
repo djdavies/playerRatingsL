@@ -10,6 +10,58 @@ class Player extends Eloquent {
 		return URL::route('players.rate', $this->id);
 	}
 
+	public function u21Url(){
+		return URL::route('players.u21', $this->id);
+	}
+
+	public static function getu21s($position){
+		if ($position == 'defender'){
+			return Player::where('position', '=', 'defender','and')->where('team','=','u21','and')->get();
+		}
+		else if ($position == 'midfielder'){
+			return Player::where('position', '=', 'midfielder', 'and')->where('team','=','u21','and')->get();
+		}	
+		// todo midfielder, strikers, goalkeeper
+		else if ($position == 'striker'){
+			return Player::where('position', '=', 'striker', 'and')->where('team','=','u21','and')->get();
+		}	
+		else {
+			return 'Error: position not found';
+		}
+	}
+
+	public static function getu18s($position){
+		if ($position == 'defender'){
+			return Player::where('position', '=', 'defender', 'and')->where('team','=','u18','and')->get();
+		}
+		else if ($position == 'midfielder'){
+			return Player::where('position', '=', 'midfielder', 'and')->where('team','=','u18','and')->get();
+		}	
+		// todo midfielder, strikers, goalkeeper
+		else if ($position == 'striker'){
+			return Player::where('position', '=', 'striker', 'and')->where('team','=','u18','and')->get();
+		}	
+		else {
+			return 'Error: position not found';
+		}
+	}
+
+	public static function getu16s($position){
+		if ($position == 'defender'){
+			return Player::where('position', '=', 'defender', 'and')->where('team','=','u16','and')->get();
+		}
+		else if ($position == 'midfielder'){
+			return Player::where('position', '=', 'midfielder', 'and')->where('team','=','u16','and')->get();
+		}	
+		// todo midfielder, strikers, goalkeeper
+		else if ($position == 'striker'){
+			return Player::where('position', '=', 'striker', 'and')->where('team','=','u16','and')->get();
+		}	
+		else {
+			return 'Error: position not found';
+		}
+	}	
+			
 	public function ratings() {
 		if ($this->position == 'defender') {
 			return $this->hasMany('DefenderRating');
