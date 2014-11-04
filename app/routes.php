@@ -45,6 +45,17 @@ Route::get('u21/{position}',[
 	'uses' => 'PlayerController@getU21s'
 	]);
 
+Route::get('u16/{position}',[
+	'as' => 'players.u16',
+	'uses' => 'PlayerController@showU16'
+	]);
+
+Route::get('u16/{position}',[
+	'as' => 'players.u16',
+	'uses' => 'PlayerController@getU16s'
+	]);
+
+
 Route::post('login', [
 	'as' => 'login',
 	'uses' => 'LoginController@login'

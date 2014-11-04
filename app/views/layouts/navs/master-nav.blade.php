@@ -16,29 +16,29 @@
         <ul class="nav navbar-nav">
           <li class="active">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">U21 <span class="caret"></span></a>
+            <a href="21" class="dropdown-toggle" data-toggle="dropdown">U21 <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="/u21/defender">Defenders</a></li>
-              <li><a href="#">Midfields</a></li>
-              <li><a href="#">Strikers</a></li>
+              <li><a href="/u21/midfielder">Midfields</a></li>
+              <li><a href="/u21/striker">Strikers</a></li>
             </ul>
           </li>
 
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">U18 <span class="caret"></span></a>
+            <a href="u18" class="dropdown-toggle" data-toggle="dropdown">U18 <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Defenders</a></li>
-              <li><a href="#">Midfields</a></li>
-              <li><a href="#">Strikers</a></li>
+              <li><a href="/u18/defender">Defenders</a></li>
+              <li><a href="/u18/midfielder">Midfields</a></li>
+              <li><a href="/u18/striker">Strikers</a></li>
             </ul>
           </li>
 
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">U16 <span class="caret"></span></a>
+            <a href="16" class="dropdown-toggle" data-toggle="dropdown">U16 <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Defenders</a></li>
-              <li><a href="#">Midfields</a></li>
-              <li><a href="#">Strikers</a></li>
+              <li><a href="/u16/defender">Defenders</a></li>
+              <li><a href="/u16/midfielder">Midfields</a></li>
+              <li><a href="/u16/striker">Strikers</a></li>
             </ul>
           </li>
         

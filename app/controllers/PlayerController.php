@@ -96,12 +96,40 @@ class PlayerController extends \BaseController {
 		else
 			return Redirect::route('home');
 	}
+
+	public function showU18($id)
+	{
+		
+		$u18Player = Player::find($id);
+		
+		if ($u18Player->position == 'defender' and $u18Player->team == 'u21'){
+			return View::make('layouts.players.player', ['player'=>$u18Player]);
+		}
+
+		else
+			return Redirect::route('home');
+	}
 	public function getU21s($position){
 		
 		$playersu21 = Player::getU21s($position);
 
 		return View::make('layouts.players.players', ['players' => $playersu21]);
 	}
+
+	public function getU18s($position){
+		
+		$playersu18 = Player::getU18s($position);
+
+		return View::make('layouts.players.players', ['players' => $playersu18]);
+	}
+
+	public function getU16s($position){
+		
+		$playersu16 = Player::getU16s($position);
+
+		return View::make('layouts.players.players', ['players' => $playersu16]);
+	}
+
 
 	/**
 	 * Remove the specified resource from storage.
