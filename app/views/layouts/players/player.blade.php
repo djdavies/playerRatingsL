@@ -15,7 +15,7 @@
 					<p>Position: {{{ $player->position }}}</p>
 					<p>Team: {{{ $player->team }}}</p>
 					<p>Height(cm): {{{ $player->height }}}</p>
-					<p>Weight(kg): {{{ $player->weight }}}</p>
+					<p>Weight(kg): {{{ round($player->weight, 0 ) }}}</p>
 
 					<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
 						Rate Me

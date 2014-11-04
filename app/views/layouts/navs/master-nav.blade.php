@@ -19,7 +19,7 @@
             <a href="21" class="dropdown-toggle" data-toggle="dropdown">U21 <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="/u21/defender">Defenders</a></li>
-              <li><a href="/u21/midfielder">Midfields</a></li>
+              <li><a href="/u21/midfielder">Midfielders</a></li>
               <li><a href="/u21/striker">Strikers</a></li>
             </ul>
           </li>
@@ -28,7 +28,7 @@
             <a href="u18" class="dropdown-toggle" data-toggle="dropdown">U18 <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="/u18/defender">Defenders</a></li>
-              <li><a href="/u18/midfielder">Midfields</a></li>
+              <li><a href="/u18/midfielder">Midfielders</a></li>
               <li><a href="/u18/striker">Strikers</a></li>
             </ul>
           </li>
@@ -37,7 +37,7 @@
             <a href="16" class="dropdown-toggle" data-toggle="dropdown">U16 <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="/u16/defender">Defenders</a></li>
-              <li><a href="/u16/midfielder">Midfields</a></li>
+              <li><a href="/u16/midfielder">Midfielders</a></li>
               <li><a href="/u16/striker">Strikers</a></li>
             </ul>
           </li>

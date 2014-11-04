@@ -45,7 +45,7 @@ class PlayerController extends \BaseController {
 	{
 		$player = Player::find($id);
 		if ($player)
-			return View::make('layouts.players.player', ['player'=>$player]);
+			return View::make('layouts.players.players', ['players'=>[$player]]);
 		else
 			return Redirect::route('home');
 	}
@@ -104,6 +104,19 @@ class PlayerController extends \BaseController {
 		
 		if ($u18Player->position == 'defender' and $u18Player->team == 'u21'){
 			return View::make('layouts.players.player', ['player'=>$u18Player]);
+		}
+
+		else
+			return Redirect::route('home');
+	}
+
+	public function showU16($id)
+	{
+		
+		$u16Player = Player::find($id);
+		
+		if ($u16Player->position == 'defender' and $u16Player->team == 'u16'){
+			return View::make('layouts.players.player', ['player'=>$u16Player]);
 		}
 
 		else
