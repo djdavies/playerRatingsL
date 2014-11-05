@@ -1,3 +1,4 @@
+
 <?php
 	class Queries {
 		private $connect;
@@ -152,6 +153,74 @@
 		public function u21table (){
 			$sql = 	"SELECT name, gd, points 
 					FROM teamsleagueu21 
+					ORDER BY points DESC
+					LIMIT 3 ";
+
+			$mysqli_results = $this->connect->query($sql);	
+			
+			$posCount = 1;
+
+			while ($row = $mysqli_results->fetch_assoc()) {
+				echo
+    			"<tr>" .
+      			"<td>" . $posCount. "</td>" .
+      			"<td>" .  $row['name'] . "</td>" .
+			    "<td>" . $row['gd'] . "</td>" .
+			    "<td>" . $row['points'] . "</td>" .
+			    "</tr>";
+			    
+			    $posCount++;
+			} 
+		}
+
+		public function u21TableFull (){
+			$sql = 	"SELECT name, gd, points 
+					FROM teamsleagueu21 
+					ORDER BY points DESC";
+
+			$mysqli_results = $this->connect->query($sql);	
+			
+			$posCount = 1;
+
+			while ($row = $mysqli_results->fetch_assoc()) {
+				echo
+    			"<tr>" .
+      			"<td>" . $posCount. "</td>" .
+      			"<td>" .  $row['name'] . "</td>" .
+			    "<td>" . $row['gd'] . "</td>" .
+			    "<td>" . $row['points'] . "</td>" .
+			    "</tr>";
+			    
+			    $posCount++;
+			} 
+		}
+
+		public function u18table (){
+			$sql = 	"SELECT name, gd, points 
+					FROM teamsleagueu18 
+					ORDER BY points DESC
+					LIMIT 3";
+
+			$mysqli_results = $this->connect->query($sql);	
+			
+			$posCount = 1;
+
+			while ($row = $mysqli_results->fetch_assoc()) {
+				echo
+    			"<tr>" .
+      			"<td>" . $posCount. "</td>" .
+      			"<td>" .  $row['name'] . "</td>" .
+			    "<td>" . $row['gd'] . "</td>" .
+			    "<td>" . $row['points'] . "</td>" .
+			    "</tr>";
+			    
+			    $posCount++;
+			} 
+		}	
+
+		public function u18TableFull (){
+			$sql = 	"SELECT name, gd, points 
+					FROM teamsleagueu18 
 					ORDER BY points DESC";
 
 			$mysqli_results = $this->connect->query($sql);	
@@ -170,6 +239,7 @@
 			    $posCount++;
 			} 
 		}	
+
 
 		public function searchPlayer ($playerNameSearch) {
 			$sql = "SELECT * 

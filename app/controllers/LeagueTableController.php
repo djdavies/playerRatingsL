@@ -4,15 +4,9 @@
 
 class U21Controller extends \BaseController {
 
-		public function showU21($id)
-		$player = Player::find($id);
-		if ($player)
-			return View::make('layouts.players.player', ['player'=>$player]);
-		else
-			return Redirect::route('home');
-	}
+		
 
-	public function showU21($id) {
+	public function showU21table($id) {
 		
 		$u21Player = Player::find($id);
 		

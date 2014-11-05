@@ -6,12 +6,13 @@ $queries = new Queries;
 
 <div class="rightBar">
 	<table class="table">
-	    <tr>
+		<h4> U18 League Table </h4>
+		<tr>
 	      <th>Pos.</th>
 	      <th>Teams</th>
 	      <th>GD</th>
 	      <th>Points</th>
 	    </tr>
-    {{ $queries->u21table() }}
+		{{ $queries->u21TableFull() }}	
 	<table>
 </div> 

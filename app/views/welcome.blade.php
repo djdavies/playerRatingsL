@@ -21,9 +21,18 @@
 		    </div>	
 
 		    <div class="col-md-3">
-				@include('layouts.bars.right-bar')		    	
+		    	@if (Request::url() === 'http://localhost:8000')
+					@include('layouts.bars.right-barU21')
+				@elseif (Request::url() === 'http://localhost:8000/u21/defender')
+					@include('layouts.bars.right-barU21View')
+				@elseif (Request::url() === 'http://localhost:8000/u18/defender')
+					@include('layouts.bars.right-barU18View')
+				@elseif (Request::url() === 'http://localhost:8000/u16/defender')	
+					@include('layouts.bars.right-barU18View')
+				@else	
+					foo	
+				@endif		    	
 		    </div>
-		    
 		</div>
 	</div>
 </body>
