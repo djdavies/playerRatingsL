@@ -67,13 +67,13 @@ Route::post('logout', [
 
 
 Route::get('searchPlayer/{q}', [
-	'as' => 'searchPlayer',
+	'as' => 'search.player',
 	'uses' => 'SearchPlayerController@searchForPlayer'	
 ]);
 
 Route::post('searchPlayer', function() {
 
-	return null;
+	return "You searched for nothing, and/or not a valid player!";
 });
 
 
@@ -116,24 +116,22 @@ Route::post('cake', function () {
 // Routes to tinker with AJAX - this is not part of the website
 // and may be deleted safely
 
-/*
-Route::get('api/players', [
-    'as' => 'api.players',
-    function () {
-    	if (rand(0,1))
-        return Player::all();
-    else
-    	return Response::json(['messages' => ['nope']], 400);
-    }
-]);
+// Route::get('api/players', [
+//     'as' => 'api.players',
+//     function () {
+//     	if (rand(0,1))
+//         return Player::all();
+//     else
+//     	return Response::json(['messages' => ['nope']], 400);
+//     }
+// ]);
 
-Route::get('ajax', function () {
-	return View::make('hello');
-});
+// Route::get('ajax', function () {
+// 	return View::make('hello');
+// });
 
-Route::post('api/v1/make', [
-	'as' => 'api.make', function () {
-		return Response::make('',200); 
-	}
-]);
-*/
+// Route::post('api/v1/make', [
+// 	'as' => 'api.make', function () {
+// 		return Response::make('',200); 
+// 	}
+// ]);
