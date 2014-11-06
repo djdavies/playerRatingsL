@@ -2,7 +2,7 @@
 
 @section('content')
 	<div id="pitch" style="min-height: 300px; background-color:green;">
-	@foreach($d efenders as $index => $defender)
+	@foreach($defenders as $index => $defender)
 			<div class="defenders" 
 				style="position: absolute; top: 25%; left:{{ 10 + $index * 20 }}%">
 				<a href="{{ $player->url() }}">{{ $player->name }}</a>
