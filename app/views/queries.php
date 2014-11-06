@@ -28,7 +28,7 @@
 				// bind result variables
 				$results = $stmt->get_result();
 
-				printf("name is %s\n", $results->fetch_assoc()['name']);
+				printf($results->fetch_assoc()['name']);
 
 				// close statement
 				$stmt->close();

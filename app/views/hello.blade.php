@@ -45,8 +45,7 @@ $(function() {
 	    	alert('ERROR!!!');
 	    });
     });
-});
-       
+}); 
 </script>
 </html>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
