@@ -39,7 +39,9 @@ function ajaxSearch(event){
 			// build a useful string!
 			var html = '';
 			for (var i=0; i<data.length; i++)
-				html += '<li>' + data[i].name + '</li>';
+				html += '<li><a href="{{ $player->url() }}">' 
+				+ data[i].name 
+				+ '</a></li>';
 
 			$("#centralContent").html(html);
         },
