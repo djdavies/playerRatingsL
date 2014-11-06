@@ -19,8 +19,8 @@
 		Username: <input style="width:100px " type="text" name="username" class="form-control">
 		Password: <input style="width:130px "type="text" name="password" class="form-control">
 		<button type="login" class="btn btn-default">Login</button>
-		<button type="register" class="btn btn-default">Register</button>
 	</div>
 	</form>
 @endif
+
 

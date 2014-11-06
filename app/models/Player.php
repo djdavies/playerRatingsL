@@ -16,14 +16,17 @@ class Player extends Eloquent {
 
 	public static function getu21s($position){
 		if ($position == 'defender'){
-			return Player::where('position', '=', 'defender','and')->where('team','=','u21','and')->get();
+			return Player::where('position', '=', 'defender','and')
+				->where('team','=','u21','and')->get();
 		}
 		else if ($position == 'midfielder'){
-			return Player::where('position', '=', 'midfielder', 'and')->where('team','=','u21','and')->get();
+			return Player::where('position', '=', 'midfielder', 'and')
+				->where('team','=','u21','and')->get();
 		}	
 		// todo midfielder, strikers, goalkeeper
 		else if ($position == 'striker'){
-			return Player::where('position', '=', 'striker', 'and')->where('team','=','u21','and')->get();
+			return Player::where('position', '=', 'striker', 'and')
+				->where('team','=','u21','and')->get();
 		}	
 		else {
 			return 'Error: position not found';
@@ -32,14 +35,17 @@ class Player extends Eloquent {
 
 	public static function getu18s($position){
 		if ($position == 'defender'){
-			return Player::where('position', '=', 'defender', 'and')->where('team','=','u18','and')->get();
+			return Player::where('position', '=', 'defender', 'and')
+				->where('team','=','u18','and')->get();
 		}
 		else if ($position == 'midfielder'){
-			return Player::where('position', '=', 'midfielder', 'and')->where('team','=','u18','and')->get();
+			return Player::where('position', '=', 'midfielder', 'and')
+				->where('team','=','u18','and')->get();
 		}	
 		// todo midfielder, strikers, goalkeeper
 		else if ($position == 'striker'){
-			return Player::where('position', '=', 'striker', 'and')->where('team','=','u18','and')->get();
+			return Player::where('position', '=', 'striker', 'and')
+				->where('team','=','u18','and')->get();
 		}	
 		else {
 			return 'Error: position not found';
@@ -48,14 +54,17 @@ class Player extends Eloquent {
 
 	public static function getu16s($position){
 		if ($position == 'defender'){
-			return Player::where('position', '=', 'defender', 'and')->where('team','=','u16','and')->get();
+			return Player::where('position', '=', 'defender', 'and')
+				->where('team','=','u16','and')->get();
 		}
 		else if ($position == 'midfielder'){
-			return Player::where('position', '=', 'midfielder', 'and')->where('team','=','u16','and')->get();
+			return Player::where('position', '=', 'midfielder', 'and')
+				->where('team','=','u16','and')->get();
 		}	
 		// todo midfielder, strikers, goalkeeper
 		else if ($position == 'striker'){
-			return Player::where('position', '=', 'striker', 'and')->where('team','=','u16','and')->get();
+			return Player::where('position', '=', 'striker', 'and')
+				->where('team','=','u16','and')->get();
 		}	
 		else {
 			return 'Error: position not found';
@@ -87,7 +96,7 @@ class Player extends Eloquent {
 		foreach ($this->ratings as $rating) {
 			$total += $rating->ratingAverage();
 		}
-		
+
 		return $this->ratings->count()
 			? round ($total / $this->ratings->count(), 2)
 			: 0;

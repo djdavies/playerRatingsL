@@ -125,6 +125,7 @@ class PlayerController extends \BaseController {
 	public function getU21s($position){
 		
 		$playersu21 = Player::getU21s($position);
+		
 
 		return View::make('layouts.players.players', ['players' => $playersu21]);
 	}

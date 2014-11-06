@@ -45,8 +45,13 @@
           <!-- search form -->
           @include('layouts.searchPlayers.searchPlayer')
           <!-- login form -->
+          <!-- Registration Button-->
+          @include('layouts.forms.registration-form')
+          <!-- login form -->
           @include('layouts.forms.login-form')
-      </div><!-- /.navbar-collapse -->
+          <!-- login form -->
+
+        </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
 
