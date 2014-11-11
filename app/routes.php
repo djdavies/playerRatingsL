@@ -81,6 +81,7 @@ Route::get('searchPlayer/{q}', [
 	'uses' => 'SearchPlayerController@searchForPlayer'	
 ]);
 
+
 Route::post('searchPlayer', function() {
 
 	return "You searched for nothing, and/or not a valid player!";

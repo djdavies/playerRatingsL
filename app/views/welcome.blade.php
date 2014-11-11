@@ -7,6 +7,7 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="/jquery/jquery-1.11.1.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="/js/app.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/app.js"></script>
 	<script src="http://imsky.github.io/holder/holder.js"></script>
@@ -27,13 +28,13 @@
 		    </div>	
 
 		    <div class="col-md-3">
-		    	@if (Request::url() === 'http://localhost:8000')
+		    	@if (Route::currentRouteName() === 'home')
 					@include('layouts.bars.right-barU21')
-				@elseif (Request::url() === 'http://localhost:8000/u21/defender')
+				@elseif (Route::currentRouteName() === 'players.u21')
 					@include('layouts.bars.right-barU21View')
-				@elseif (Request::url() === 'http://localhost:8000/u18/defender')
+				@elseif (Route::currentRouteName() === 'players.u18')
 					@include('layouts.bars.right-barU18View')
-				@elseif (Request::url() === 'http://localhost:8000/u16/defender')	
+				@elseif (Route::currentRouteName() === 'players.u16')	
 					@include('layouts.bars.right-barU18View')
 				@else	
 					foo	
