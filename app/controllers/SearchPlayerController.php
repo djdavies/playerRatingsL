@@ -19,11 +19,17 @@ class SearchPlayerController extends \BaseController {
 			$query->orWhere('name', 'LIKE', '%'. $term .'%');
 		}
 		
+		
 		$players = $query->get();
 		
-		// returns json players object
-		return $players; 
-		//return View::make('layouts.searchPlayers.searchPlayerResult')
+		if ($players->count()) {
+			// returns json players object
+			return $players; 
+		} else {
+			return [];
+		}
+
+
 		// return View::make('welcome')
 		// 	->with('players', $players);
 	} // end func

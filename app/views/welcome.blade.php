@@ -27,16 +27,16 @@
 		    </div>	
 
 		    <div class="col-md-3">
-		    	@if (Request::url() === 'http://localhost:8000')
+		    	@if (Route::currentRouteName() === 'home')
 					@include('layouts.bars.right-barU21')
-				@elseif (Request::url() === 'http://localhost:8000/u21/defender')
+				@elseif (Route::currentRouteName() === 'players.u21')
 					@include('layouts.bars.right-barU21View')
-				@elseif (Request::url() === 'http://localhost:8000/u18/defender')
+				@elseif (Route::currentRouteName() === 'players.u18')
 					@include('layouts.bars.right-barU18View')
-				@elseif (Request::url() === 'http://localhost:8000/u16/defender')	
+				@elseif (Route::currentRouteName() === 'players.u16')	
 					@include('layouts.bars.right-barU18View')
 				@else	
-					foo	
+					@include('layouts.bars.right-barU21')	
 				@endif		    	
 		    </div>
 		</div>

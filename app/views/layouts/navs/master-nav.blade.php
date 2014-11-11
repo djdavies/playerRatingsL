@@ -8,7 +8,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php">Newport County A.F.C.</a>
+        <a class="navbar-brand" href="{{ URL::to('/') }}">Newport County A.F.C.</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->

@@ -30,7 +30,11 @@
         <option value="4">Good</option>
         <option value="5">Sublime!</option>
       </select> <br>
+         <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Rate!</button>
+      </div>
 
-      <button type="submit">Rate!</button>
     </form>
+
   @stop

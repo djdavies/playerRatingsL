@@ -38,8 +38,8 @@ function ajaxSearch(event){
 		success: function(data) {
 			// build a useful string!
 			var html = '';
-			for (var i=0; i<data.length; i++)
-				html += '<li><a href="{{ $player->url() }}">' 
+			for (var i=0; i<data.length; i++) 
+				html += '<li><a href="' + 'players/' + data[i].id + '">' 
 				+ data[i].name 
 				+ '</a></li>';
 
