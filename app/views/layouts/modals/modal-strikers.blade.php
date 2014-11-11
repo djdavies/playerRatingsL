@@ -29,10 +29,18 @@
         <option value="4">Good</option>
         <option value="5">Sublime!</option>
       </select> <br>
+         <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Rate!</button>
+      </div>
 
+<<<<<<< HEAD
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="submit" class="btn btn-primary">Rate</button>
       </div>
+=======
+>>>>>>> 74cd3049150a8cb6e30ff3fbde61b7b59fe30230
     </form>
+
   @stop

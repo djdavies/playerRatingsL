@@ -37,7 +37,7 @@
 				@elseif (Route::currentRouteName() === 'players.u16')	
 					@include('layouts.bars.right-barU18View')
 				@else	
-					foo	
+					@include('layouts.bars.right-barU21')	
 				@endif		    	
 		    </div>
 		</div>

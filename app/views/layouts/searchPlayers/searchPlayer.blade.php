@@ -38,8 +38,10 @@ function ajaxSearch(event){
 		success: function(data) {
 			// build a useful string!
 			var html = '';
-			for (var i=0; i<data.length; i++)
-				html += '<li>' + data[i].name + '</li>';
+			for (var i=0; i<data.length; i++) 
+				html += '<li><a href="' + 'players/' + data[i].id + '">' 
+				+ data[i].name 
+				+ '</a></li>';
 
 			$("#centralContent").html(html);
         },
