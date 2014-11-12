@@ -81,11 +81,17 @@ Route::get('searchPlayer/{q}', [
 	'uses' => 'SearchPlayerController@searchForPlayer'	
 ]);
 
-Route::post('searchPlayer', function() {
+// check if nothing was passed to search input field, if so, return this...
+Route::post('searchPlayer/', function() {
 
 	return "You searched for nothing, and/or not a valid player!";
 });
 
+// testing a graph for a player's goals and assists...
+Route::get('graph', function()
+{
+    return View::make('graphs');
+});
 
 /*
 Route::get('players/{id}/{position}/u21Defenders', [
