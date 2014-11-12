@@ -1,7 +1,6 @@
 @extends('layouts.modals.master-modal')
 
 @section('rating-form')
-Rating a defender:
     <form
       method="POST" 
       action="{{ URL::route('players.rate', $player->id) }}">
@@ -49,9 +48,14 @@ Rating a defender:
 
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+<<<<<<< HEAD
+        <button type="submit" class="btn btn-primary">Rate</button>
+      </div>
+=======
         <button type="submit" class="btn btn-primary">Rate!</button>
       </div>
 
+>>>>>>> 74cd3049150a8cb6e30ff3fbde61b7b59fe30230
     </form>
 
 

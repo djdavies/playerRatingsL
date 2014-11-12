@@ -81,8 +81,7 @@ Route::get('searchPlayer/{q}', [
 	'uses' => 'SearchPlayerController@searchForPlayer'	
 ]);
 
-// check if nothing was passed to search input field, if so, return this...
-Route::post('searchPlayer/', function() {
+Route::post('searchPlayer', function() {
 
 	return "You searched for nothing, and/or not a valid player!";
 });
